@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud operation in javascript</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: wheat">
+    <table>
+        <tr>
+            <td>
+                <!--HTML form for crud operation-->
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="fullName*">Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" placeholder="Full Name"name="fullName" id="fullName" >
+                    </div>
+                    <div>
+                        <label for="Role">Role</label>
+                        <input type="text" placeholder="Role"name="Role" id="Role" >
+                    </div>
+                    <div>
+                        <label for="Mobile">Mobile</label>
+                        <input type="Mobile" placeeholder="Mobile"name="Mobile" id="Mobile">
+                    </div>
+                    <div>
+                        <label for="Manager">Manager</label>
+                        <input type="text" placeholder="Manager"name="Manager" id="Manager">
+                    </div>
+                    <div>
+                        <label for="Office">Office</label>
+                        <input type="text" placeholder="Office"name="Office" id="Office">
+                    </div>
+                    <div>
+                        <label for="JoiningDate">JoiningDate</label>
+                        <input type="Date" placeholder="JoiningDate"name="JoiningDate" id="JoiningDate">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Role</th>
+                            <th>Mobile</th>
+                            <th>Manager</th>
+                            <th>Office</th>
+                            <th>JoiningDate</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
